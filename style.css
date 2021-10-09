@@ -1,84 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Zen+Tokyo+Zoo&display=swap');
+
 *, ::before, ::after{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 body{
+    font-family: Roboto, sans-serif;
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+
+ul{
+    display: grid;
+    grid-template: repeat(5, 1fr) /1fr 1fr;
+    list-style: none;
+    padding: 10px;
+}
+
+li{
     display: flex;
     flex-direction: column;
-    position: relative;
-    font-family: Roboto, Ubuntu, sans-serif;
-}
-
-.bg{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-header{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 15vh;
-    background-color: #aa1212;
-}
-
-.title{
-    width: 30%;
-    font-family: 'Zen Tokyo Zoo';
-    font-size: 2.5em;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-header nav{
-    width: 70%;
-    height: 100%;
-    display: flex;
-    font-family: Montserrat, Roboto, sans-serif;
-}
-
-header nav ul{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    list-style: none;
-}
-
-header nav li{
-    width: 30%;
-    height: 100%;
+    margin: 15px;
     padding: 20px;
-    position: relative;
+    background-color: rgb(155, 20, 20);
+    opacity: .8;
+    flex-wrap: wrap;
+    width: 500px;
 }
 
-header nav a{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    color: black;
-    text-decoration: none;
-    text-transform: capitalize;
-    justify-content: center
+li h3{
+    font-family: 'Zen Tokyo Zoo', Ubuntu, sans-serif;
+    font-size: 2em;
+    color: #09f;
 }
 
-header nav li::after{
-    height: 3px;
-    position: absolute;
-    transform: scaleX(0%);
+li p.poeme-content{
+    font-style: italic;
+    color: rgba(146, 48, 236, 1);
 }
 
-header nav li:hover{
-    background-color: #991212;
+li p.justification{
+    margin: 20px;
 }
 
-li:hover a{
-    text-shadow: #121212 0px 0px 10px;
+li.img{
+    width: 700px;
+    height: auto;
+    align-self: flex-end;
+}
+
+li.img img{
+    max-width: 650px;
+    max-height: 550px;
+    width: auto;
+    height: auto;
+}
+
+#poem1{
+    grid-area: 1/1;
+}
+
+#img1{
+    grid-area: 1/2;
 }
