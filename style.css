@@ -12,6 +12,17 @@ body{
     background-repeat: repeat-y;
 }
 
+h1{
+    font-family: 'Zen Tokyo Zoo', sans-serif;
+    color: aqua;
+    text-decoration: underline;
+    padding: 20px;
+}
+
+p.intro{
+    padding: 30px;
+}
+
 ul{
     display: grid;
     grid-template: repeat(5, 1fr) /1fr 1fr;
